@@ -200,7 +200,8 @@ int tmin(void) {
  *   Rating: 1
  */
 int isTmax(int x) {
-	return x;
+    int result = ((x != -1) & ((~x) + (~x) == 0));
+	return result;
 }
 /* 
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
