@@ -203,6 +203,8 @@ int isTmax(int x) {
     int result = ((x != -1) & ((~x) + (~x) == 0));
 	return result;
 }
+
+
 /* 
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
  *   where bits are numbered from 0 (least significant) to 31 (most significant)
