@@ -214,7 +214,8 @@ int isTmax(int x) {
  *   Rating: 2
  */
 int allOddBits(int x) {
-  return 2;
+  	int result = ((x | 0xAAAAAAAA) == x);
+	return result;
 }
 /* i
  * negate - return -x 
@@ -224,7 +225,8 @@ int allOddBits(int x) {
  *   Rating: 2
  */
 int negate(int x) {
-  return 2;
+  	int result = (x ^ 0x80000000);
+	return result;
 }
 //3
 /* 
